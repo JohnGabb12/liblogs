@@ -1,0 +1,23 @@
+Navigation Tree
+
+Index (where a button "get started" exist)
+|
+v
+Library ("What library are we exploring today?" header with 2 buttons: Search library and Scan Library QR Code)
+|-> Scan Library QR Code
+|-> Search library
+    |
+    v
+    library/(id) ("Welcome to [Library name]" header with buttons Identify book, Locate book.)
+    |-> Scan cover of book / Barcode
+    |   |
+    |   v
+    |   Book Location (The location and if available with Text to speech) (has button to show details)
+    |
+    |-> Search book (with voice Speech to text)
+        |
+        v
+        Book Navigation
+        |
+        v
+        Book Details (The book details and synopsis and summary) (Has button to show location)

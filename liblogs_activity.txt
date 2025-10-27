@@ -1,0 +1,8 @@
+[2025-10-21T10:10:00Z] Init: Audited Expo + expo-router (SDK 54). Plan: add Discovery & Recognition tabs, sample dataset, TTS, haptics, camera (mock), device logging.
+[2025-10-21T10:15:00Z] Added lib/books.ts with sample dataset and helpers.
+[2025-10-21T10:16:00Z] Added lib/logger.ts with FileSystem-based device logging utility.
+[2025-10-21T10:20:00Z] Implemented screens: Discovery, Recognition, and Book details; wired basic UI.
+[2025-10-21T10:22:00Z] Updated _layout.tsx to Tabs for Home/Discover/Recognize and index screen design.
+[2025-10-21T10:23:30Z] Updated tsconfig.json for JSX and ES libs.
+[2025-10-21T10:24:30Z] Declared Android permissions (CAMERA, VIBRATE) in app.json.
+[2025-10-21T10:25:30Z] Added expo modules to package.json: camera, file-system, speech.

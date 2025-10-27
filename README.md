@@ -1,50 +1,31 @@
-# Welcome to your Expo app 👋
+# LibLogs: Camera-Based Book Identification
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+LibLogs is an AI-inspired prototype to make library book discovery and identification fast and accessible.
 
-## Get started
+Tagline: See it. Scan it. Know it. Find it. Follow it. Get it.
 
-1. Install dependencies
+## Modes
+- Discovery: Search by title/author/genre and get shelf location, availability, and simple guidance with optional speech and haptics.
+- Recognition: Use the camera to mock-recognize a book and jump to details with speech/haptic feedback.
 
-   ```bash
+## Tech
+- Expo Router (file-based navigation)
+- React Native (TypeScript)
+- Expo modules: Camera, Haptics, Speech, FileSystem
+
+## Run it
+1. Install deps
+   - Windows PowerShell
+   ```powershell
    npm install
    ```
-
-2. Start the app
-
-   ```bash
+2. Start
+   ```powershell
    npx expo start
    ```
+3. Open on Android (recommended for camera/haptics).
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Notes
+- Dataset is local and minimal (`lib/books.ts`).
+- Recognition is mocked for the prototype; no advanced security is applied.
+- All user actions are logged to a device file (see `lib/logger.ts`).
