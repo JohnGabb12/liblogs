@@ -5,11 +5,11 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import * as Speech from 'expo-speech';
 import { useEffect, useRef, useState } from 'react';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
-import { BOOKS, getLibraryByQRCode, getBookById } from '../lib/books';
+import { BackButton } from '../lib/BackButton';
+import { BOOKS, getBookById, getLibraryByQRCode } from '../lib/books';
 import { analyzeCover } from '../lib/coverRecognition';
 import { useLibrary } from '../lib/libraryContext';
 import { logEvent } from '../lib/logger';
-import { BackButton } from '../lib/BackButton';
 
 // Real barcode recognition function
 async function recognizeByBarcode(barcodeData: string): Promise<string | null> {

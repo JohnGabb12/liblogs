@@ -1,4 +1,4 @@
-import { Link, useRouter } from "expo-router";
+import { useRouter } from "expo-router";
 import * as Speech from 'expo-speech';
 import { useEffect } from 'react';
 import { Pressable, StyleSheet, Text, View } from "react-native";

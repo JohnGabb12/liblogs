@@ -2,12 +2,12 @@ import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
 import * as Speech from 'expo-speech';
 import { useEffect, useState } from 'react';
-import { FlatList, Pressable, StyleSheet, Text, TextInput, View, ActivityIndicator } from 'react-native';
-import { Book, getAllLibraries, getLibraryById, searchBooks, Library } from '../lib/books';
+import { ActivityIndicator, FlatList, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { BackButton } from '../lib/BackButton';
+import { Book, getAllLibraries, getLibraryById, Library, searchBooks } from '../lib/books';
 import { useLibrary } from '../lib/libraryContext';
 import { logEvent } from '../lib/logger';
 import { useSpeechToText } from '../lib/speechToText';
-import { BackButton } from '../lib/BackButton';
 
 export default function DiscoveryScreen() {
   const [query, setQuery] = useState('');

@@ -1,11 +1,11 @@
 import * as Haptics from 'expo-haptics';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import * as Speech from 'expo-speech';
-import { Pressable, StyleSheet, Text, View, ActivityIndicator } from 'react-native';
-import { getBookById, Book } from '../../lib/books';
-import { logEvent } from '../../lib/logger';
-import { BackButton } from '../../lib/BackButton';
 import { useEffect, useState } from 'react';
+import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-native';
+import { BackButton } from '../../lib/BackButton';
+import { Book, getBookById } from '../../lib/books';
+import { logEvent } from '../../lib/logger';
 
 export default function BookDetails() {
   const { id } = useLocalSearchParams<{ id: string }>();
